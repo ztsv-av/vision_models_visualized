@@ -1,0 +1,89 @@
+{
+  "models": [
+    "convnext_b",
+    "deit_b",
+    "mlpmixer_l16"
+  ],
+  "metrics": {
+    "convnext_b": {
+      "accuracy": 0.25,
+      "num_samples": 4,
+      "num_classes": 1000
+    },
+    "deit_b": {
+      "accuracy": 0.25,
+      "num_samples": 4,
+      "num_classes": 1000
+    },
+    "mlpmixer_l16": {
+      "accuracy": 0.5,
+      "num_samples": 4,
+      "num_classes": 1000
+    }
+  },
+  "agreement_sets": {
+    "all_correct": [],
+    "all_wrong": [
+      0,
+      2
+    ],
+    "mixed": [
+      1,
+      3
+    ]
+  },
+  "per_model_sets": {
+    "convnext_b": {
+      "correct": [
+        3
+      ],
+      "wrong": [
+        0,
+        1,
+        2
+      ]
+    },
+    "deit_b": {
+      "correct": [
+        1
+      ],
+      "wrong": [
+        0,
+        2,
+        3
+      ]
+    },
+    "mlpmixer_l16": {
+      "correct": [
+        1,
+        3
+      ],
+      "wrong": [
+        0,
+        2
+      ]
+    }
+  },
+  "pairwise_sets": {
+    "convnext_b": {
+      "deit_b": [
+        3
+      ],
+      "mlpmixer_l16": []
+    },
+    "deit_b": {
+      "convnext_b": [
+        1
+      ],
+      "mlpmixer_l16": []
+    },
+    "mlpmixer_l16": {
+      "convnext_b": [
+        1
+      ],
+      "deit_b": [
+        3
+      ]
+    }
+  }
+}
