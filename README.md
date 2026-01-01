@@ -2,7 +2,7 @@
   <img src="figures/readme.png" width="800">
 </p>
 
-# Vision Models Visualization
+# Vision Models Visualized
 
 The goal in this repo is to visualize how different image classification architectures interpret images and make predictions.
 
